@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to my #{title}!
+    each msg in messages
+        .message-card
+            h3 Created by #{msg.user} on #{msg.added.toISOString().replace(/T/, ' ').replace(/\..+/, '')}
+            p= msg.text
+    a(href="/new",class="go-to-new") Add a new message

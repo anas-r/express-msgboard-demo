@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.message-card {
+    margin-top: 40px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+form.new-msg label {
+    display: block;
+    width: 100%;
+}
+
+form.new-msg input {
+    display: block;
+    width: 300px;
+        margin-top: 6px;
+
+    margin-bottom: 10px;
+}
+
+form.new-msg button,
+.go-to-new {
+    border-style: none;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    width: max-content;
+}

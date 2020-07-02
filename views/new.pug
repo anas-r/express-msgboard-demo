@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 Submit a new message
+    form(action="/new", method="post",class="new-msg")
+        label(for="name") Name
+            input(id="name",name="name",placeholder="Your name")
+        label(for="msg") Message
+            input(type="textarea",id="msg",name="msg",placeholder="Your message")
+        button(type="submit") Submit
